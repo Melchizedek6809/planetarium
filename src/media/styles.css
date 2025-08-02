@@ -1,0 +1,101 @@
+body {
+	font-family: var(--vscode-font-family);
+	color: var(--vscode-foreground);
+	background-color: var(--vscode-editor-background);
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#graph {
+	width: 100vw;
+	height: 100vh;
+}
+
+.node {
+	cursor: pointer;
+}
+
+.node-background {
+	fill: var(--vscode-list-inactiveSelectionBackground);
+	stroke: var(--vscode-panel-border);
+	stroke-width: 1;
+	rx: 8;
+}
+
+.node:hover .node-background {
+	fill: var(--vscode-list-hoverBackground);
+}
+
+.node-added {
+	stroke: var(--vscode-gitDecoration-addedResourceForeground) !important;
+	stroke-width: 2 !important;
+}
+
+.node-removed {
+	stroke: var(--vscode-gitDecoration-deletedResourceForeground) !important;
+	stroke-width: 2 !important;
+}
+
+.node-modified {
+	stroke: var(--vscode-gitDecoration-modifiedResourceForeground) !important;
+	stroke-width: 2 !important;
+}
+
+.filename {
+	fill: var(--vscode-foreground);
+	font-family: var(--vscode-editor-font-family);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.file-icon {
+	fill: var(--vscode-foreground);
+}
+
+.loc-text {
+	fill: var(--vscode-charts-orange);
+	font-family: var(--vscode-editor-font-family);
+	font-size: 10px;
+	font-style: italic;
+	text-anchor: middle;
+}
+
+.link {
+	stroke: var(--vscode-textLink-foreground);
+	stroke-width: 2;
+	stroke-opacity: 0.7;
+}
+
+.link:hover {
+	stroke: var(--vscode-textLink-activeForeground);
+	stroke-width: 3;
+	stroke-opacity: 1;
+}
+
+.link-added {
+	stroke: var(--vscode-gitDecoration-addedResourceForeground) !important;
+	stroke-width: 3 !important;
+}
+
+.link-removed {
+	stroke: var(--vscode-gitDecoration-deletedResourceForeground) !important;
+	stroke-width: 3 !important;
+	stroke-dasharray: 5,5 !important;
+}
+
+.link-unchanged {
+	/* Default link styling - no additional changes needed */
+}
+
+.info-panel {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: var(--vscode-editor-background);
+	border: 1px solid var(--vscode-panel-border);
+	border-radius: 4px;
+	padding: 10px;
+	font-size: 12px;
+	z-index: 1000;
+}

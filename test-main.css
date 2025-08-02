@@ -1,0 +1,7 @@
+@import "./vars.css";
+@import "./fonts.css";
+@import "./header.css";
+
+body {
+  font-family: var(--main-font);
+}

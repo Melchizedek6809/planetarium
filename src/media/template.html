@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Planetarium</title>
+	{{CSS_PLACEHOLDER}}
+</head>
+<body>
+	<div class="info-panel">
+		<div>Nodes: {{NODE_COUNT}}</div>
+		<div>Edges: {{EDGE_COUNT}}</div>
+		<div>Scroll to zoom, drag to pan</div>
+	</div>
+	<svg id="graph"></svg>
+	<script>
+		window.graphData = {{GRAPH_DATA}};
+	</script>
+	{{WEBVIEW_SCRIPT}}
+</body>
+</html>
